@@ -6,11 +6,11 @@
 ```
 * Move into the cloned directory:
 ```bash
-cd BLUE_CHIP_PITCH_APP
+cd IP3
 ```
 * Create and activate your virtual environment:
 ```bash
-mkvirtualenv virtual
+mkirtualenv virtual
 ```
 * Install project dependancies within your active environment: (Read: requirements.txt and use command below)
 ```bash
