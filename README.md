@@ -30,11 +30,6 @@ mkvirtualenv virtual
 ```bash
 (Virtual)$ flask run
 ```
-* or
-
-```bash
-(Virtual)$ python3 bluechip.py
-```
 ## Features and BDD
 
 - Users are able to create user profile and login to their profiles.
