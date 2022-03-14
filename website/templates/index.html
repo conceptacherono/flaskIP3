@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block head %}
+    {{ super() }}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}">
+{% endblock %}
+
+
+{% block app_context %}
+    <div class="row">
+        <div class="col-md-12 profile">
+            <h1 class="text-center">Hello, {{ current_user.username }} !</h1>
+            <p>{{ body }}</p>
+        </div>
+    </div>
+    <hr>
+    <!-- pitches -->
+    <div class="row pitch">
+        <h2 class="text-center">List of Pitches</h2>
+        <div class="col-md-6">
+            <div class="card">
+                {% for pitch in all_pitches %}
+                    {% include '_pitches.html' %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <!-- form starts below -->
+    <div class="row back">
+        <div class="col-md-3">
+            <!-- empty -->
+        </div>
+        <div class="col-md-6 mt-2 form">
+            <h4 class="text-center">Create Pitch</h4>
+            {{ wtf.quick_form(form) }}
+        </div>
+        <div class="col-md-2">
+            <!-- empty -->
+        </div>
+    </div>
+
+
+{% endblock %}
