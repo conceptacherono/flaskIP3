@@ -47,7 +47,6 @@ mkvirtualenv virtual
 
 ### Developed with
 **Structure:** Bootstrap, HTML
-**Styles:** CSS
 
 ## Author
 
