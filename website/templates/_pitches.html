@@ -1,8 +1,0 @@
-<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/pitch.css') }}">
-
-<div class="card-body">
-    <h5 class="card-title">{{ pitch.author.username}}  <span>Posted: {{ moment(pitch.timestamp).fromNow() }}</span></h5>
-    <p class="card-text"> {{ pitch.body }} </p>
-
-    <a href="#" class="btn">Comment</a>
-</div>
