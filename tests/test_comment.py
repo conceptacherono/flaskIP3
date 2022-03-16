@@ -13,4 +13,4 @@ class CommentTest(unittest.TestCase):
         self.new_note = Note(id =1, comment_content = 'I love this pitch')
 
     def test_instance(self):
-        self.assertTrue(isinstance(self.new_comment,Comment))
+        self.assertTrue(isinstance(self.new_note,Note))
